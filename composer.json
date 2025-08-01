@@ -1,0 +1,59 @@
+{
+    "name": "fast-forward/http",
+    "description": "Fast Forward HTTP is a toolkit for building HTTP applications in PHP.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Felipe Sayão Lobato Abreu",
+            "email": "github@mentordosnerds.com"
+        }
+    ],
+    "homepage": "https://github.com/php-fast-forward",
+    "support": {
+        "issues": "https://github.com/php-fast-forward/http/issues",
+        "source": "https://github.com/php-fast-forward/http"
+    },
+    "require": {
+        "php": "^8.2",
+        "fast-forward/http-client": "^1.0",
+        "fast-forward/http-factory": "^1.1",
+        "middlewares/utils": "^4.0"
+    },
+    "require-dev": {
+        "coisa/php-cs-fixer": "^2.1",
+        "phpspec/prophecy-phpunit": "^2.3",
+        "phpunit/phpunit": "^9.6 || ^10.5 || ^11.5"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "FastForward\\Http\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FastForward\\Http\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "scripts": {
+        "cs-check": "php-cs-fixer fix --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix",
+        "mutation-testing": "infection --threads=4",
+        "pre-commit": [
+            "@cs-check",
+            "@static-analysis",
+            "@tests"
+        ],
+        "static-analysis": "phpstan analyse --level 5 src",
+        "tests": "phpunit --testdox"
+    }
+}
