@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace FastForward\Http\Tests\ServiceProvider;
 
-use FastForward\Container\ServiceProvider\AggregateServiceProvider;
+use FastForward\Container\Factory\ServiceFactory;
 use FastForward\Http\Client\ServiceProvider\HttpClientServiceProvider;
 use FastForward\Http\Message\Factory\ServiceProvider\HttpMessageFactoryServiceProvider;
 use FastForward\Http\ServiceProvider\HttpServiceProvider;
@@ -26,7 +26,7 @@ final class HttpServiceProviderTest extends TestCase
         $expectedFactories = array_merge(
             (new HttpMessageFactoryServiceProvider())->getFactories(),
             (new HttpClientServiceProvider())->getFactories(),
-            [AggregateServiceProvider::class => fn() => null]
+            [HttpServiceProvider::class => new ServiceFactory($this->provider)]
         );
 
         $actualFactories = $this->provider->getFactories();

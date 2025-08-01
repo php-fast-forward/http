@@ -18,7 +18,6 @@ namespace FastForward\Http\ServiceProvider;
 use FastForward\Container\ServiceProvider\AggregateServiceProvider;
 use FastForward\Http\Client\ServiceProvider\HttpClientServiceProvider;
 use FastForward\Http\Message\Factory\ServiceProvider\HttpMessageFactoryServiceProvider;
-use Interop\Container\ServiceProviderInterface;
 
 /**
  * Class HttpServiceProvider
@@ -29,13 +28,8 @@ use Interop\Container\ServiceProviderInterface;
  * It MUST implement the ServiceProviderInterface and MUST delegate factory and extension
  * retrieval to the internal AggregateServiceProvider instance.
  */
-final class HttpServiceProvider implements ServiceProviderInterface
+final class HttpServiceProvider extends AggregateServiceProvider
 {
-    /**
-     * @var ServiceProviderInterface The aggregate service provider that includes all HTTP service providers.
-     */
-    private ServiceProviderInterface $serviceProvider;
-
     /**
      * Constructs the HttpServiceProvider.
      *
@@ -44,33 +38,9 @@ final class HttpServiceProvider implements ServiceProviderInterface
      */
     public function __construct()
     {
-        $this->serviceProvider = new AggregateServiceProvider(
+        parent::__construct(
             new HttpMessageFactoryServiceProvider(),
             new HttpClientServiceProvider(),
         );
-    }
-
-    /**
-     * Returns an array of factory callables provided by the aggregate service provider.
-     *
-     * This method MUST delegate the call to the internal AggregateServiceProvider.
-     *
-     * @return array<string, callable> A map of service identifiers to factory callables.
-     */
-    public function getFactories(): array
-    {
-        return $this->serviceProvider->getFactories();
-    }
-
-    /**
-     * Returns an array of service extension callables provided by the aggregate service provider.
-     *
-     * This method MUST delegate the call to the internal AggregateServiceProvider.
-     *
-     * @return array<string, callable> A map of service identifiers to extension callables.
-     */
-    public function getExtensions(): array
-    {
-        return $this->serviceProvider->getExtensions();
     }
 }
