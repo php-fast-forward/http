@@ -16,6 +16,7 @@
     },
     "require": {
         "php": "^8.2",
+        "fast-forward/container": "^1.5",
         "fast-forward/http-client": "^1.0",
         "fast-forward/http-factory": "^1.1",
         "middlewares/utils": "^4.0"
