@@ -10,7 +10,7 @@ This package serves as an **aggregate metapackage**, bundling all http component
 
 ## Features
 
-- 🚀 **Modern PHP 8.2+ syntax**
+- 🚀 **Modern PHP 8.3+ syntax**
 - ⚙️ Aggregates key components:
   - [`fast-forward/http-message`](https://github.com/php-fast-forward/http-message) – PSR-7 compatible HTTP message implementation
   - [`fast-forward/http-factory`](https://github.com/php-fast-forward/http-factory) – HTTP factory for creating PSR-7 request and response objects
