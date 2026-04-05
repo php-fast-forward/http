@@ -1,10 +1,15 @@
 Usage
 =====
 
-This section describes how to use the FastForward HTTP package in your application, including retrieving services and composing HTTP requests and responses.
+The pages in this section focus on the day-to-day developer experience: how to retrieve services,
+which interface to request, and how to use the factories and client that ``HttpServiceProvider``
+makes available.
 
 .. toctree::
    :maxdepth: 1
 
    getting-services
+   responses-and-streams
+   server-requests
+   http-client
    use-cases
