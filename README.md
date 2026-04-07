@@ -1,7 +1,7 @@
 # Fast Forward HTTP
 
 [![PHP Version](https://img.shields.io/badge/php-^8.3-777BB4?logo=php&logoColor=white)](https://www.php.net/releases/)
-[![Composer Package](https://img.shields.io/badge/composer-fast--forward%2Fhttp-F28D1A.svg?logo=composer&logoColor=white)](https://packagist.org/packages/fast-forward/clock)
+[![Composer Package](https://img.shields.io/badge/composer-fast--forward%2Fhttp-F28D1A.svg?logo=composer&logoColor=white)](https://packagist.org/packages/fast-forward/http)
 [![Tests](https://img.shields.io/github/actions/workflow/status/php-fast-forward/http/tests.yml?logo=githubactions&logoColor=white&label=tests&color=22C55E)](https://github.com/php-fast-forward/http/actions/workflows/tests.yml)
 [![Coverage](https://img.shields.io/badge/coverage-phpunit-4ADE80?logo=php&logoColor=white)](https://php-fast-forward.github.io/http/coverage/index.html)
 [![Docs](https://img.shields.io/github/deployments/php-fast-forward/http/github-pages?logo=readthedocs&logoColor=white&label=docs&labelColor=1E293B&color=38BDF8&style=flat)](https://php-fast-forward.github.io/http/index.html)
