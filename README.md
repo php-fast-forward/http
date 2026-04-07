@@ -1,7 +1,17 @@
 # Fast Forward HTTP
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![PHP Version](https://img.shields.io/badge/php-^8.3-blue.svg)](https://www.php.net/releases/)
+[![PHP Version](https://img.shields.io/badge/php-^8.3-777BB4?logo=php&logoColor=white)](https://www.php.net/releases/)
+[![Composer Package](https://img.shields.io/badge/composer-fast--forward%2Fhttp-F28D1A.svg?logo=composer&logoColor=white)](https://packagist.org/packages/fast-forward/clock)
+[![Tests](https://img.shields.io/github/actions/workflow/status/php-fast-forward/http/tests.yml?logo=githubactions&logoColor=white&label=tests&color=22C55E)](https://github.com/php-fast-forward/http/actions/workflows/tests.yml)
+[![Coverage](https://img.shields.io/badge/coverage-phpunit-4ADE80?logo=php&logoColor=white)](https://php-fast-forward.github.io/http/coverage/index.html)
+[![Docs](https://img.shields.io/github/deployments/php-fast-forward/http/github-pages?logo=readthedocs&logoColor=white&label=docs&labelColor=1E293B&color=38BDF8&style=flat)](https://php-fast-forward.github.io/http/index.html)
+[![License](https://img.shields.io/github/license/php-fast-forward/http?color=64748B)](LICENSE)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/php-fast-forward?logo=githubsponsors&logoColor=white&color=EC4899)](https://github.com/sponsors/php-fast-forward)
+
+[![PSR-7](https://img.shields.io/badge/PSR--7-http--message-777BB4?logo=php&logoColor=white)](https://www.php-fig.org/psr/psr-7/)
+[![PSR-11](https://img.shields.io/badge/PSR--11-container-777BB4?logo=php&logoColor=white)](https://www.php-fig.org/psr/psr-11/)
+[![PSR-17](https://img.shields.io/badge/PSR--17-http--factory-777BB4?logo=php&logoColor=white)](https://www.php-fig.org/psr/psr-17/)
+[![PSR-18](https://img.shields.io/badge/PSR--18-http--client-777BB4?logo=php&logoColor=white)](https://www.php-fig.org/psr/psr-18/)
 
 Fast Forward HTTP is the aggregate HTTP package of the Fast Forward ecosystem.
 
