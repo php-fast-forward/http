@@ -1,7 +1,7 @@
 # Fast Forward HTTP
 
 <p align="center">
-  <img src="assets/brand/dash.png" alt="Dash, the PHP Fast Forward fox, wearing a purple hoodie" width="320">
+  <img src="docs/_static/mascot-banner.png" alt="Dash connecting the request, response, stream and client components" width="840">
 </p>
 
 [![PHP Version](https://img.shields.io/badge/php-^8.3-777BB4?logo=php&logoColor=white)](https://www.php.net/releases/)
