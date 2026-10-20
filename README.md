@@ -92,3 +92,7 @@ See the documentation sources in [`docs/`](docs/) for:
 ## License
 
 Fast Forward HTTP is licensed under the [MIT license](LICENSE).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for changelog fragments, local checks and the release-review flow.
