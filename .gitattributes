@@ -17,3 +17,4 @@
 /.changelog/ export-ignore
 /CONTRIBUTING.md export-ignore
 /composer-dependency-analyser.php export-ignore
+/skills.json export-ignore
