@@ -101,3 +101,7 @@ See [skill installation and lifecycle](resources/skills/fast-forward-http/refere
 optional project synchronization with `llm/skills ^1.15`, guarded manual
 project/global copies and a pinned Skills CLI alternative. Shipping files does
 not install tooling or activate the skill in an agent session.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for changelog fragments, local checks and the release-review flow.
