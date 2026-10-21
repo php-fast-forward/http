@@ -93,6 +93,15 @@ See the documentation sources in [`docs/`](docs/) for:
 
 Fast Forward HTTP is licensed under the [MIT license](LICENSE).
 
+## Consumer agent skill
+
+The package includes [fast-forward-http](resources/skills/fast-forward-http/SKILL.md) for application integration.
+It supports `fast-forward/http:^1.2`; inspect the installed version.
+See [skill installation and lifecycle](resources/skills/fast-forward-http/references/installation.md) for
+optional project synchronization with `llm/skills ^1.15`, guarded manual
+project/global copies and a pinned Skills CLI alternative. Shipping files does
+not install tooling or activate the skill in an agent session.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for changelog fragments, local checks and the release-review flow.
